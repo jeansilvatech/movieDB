@@ -1,7 +1,7 @@
 {
   "name": "moviedb",
   "version": "0.1.0",
-  "homepage": "http://jeansilvatech.github.io/movieDB",
+  "homepage": "http://jeansilvatech.github.io/movieDB/",
   "private": true,
   "scripts": {
     "dev": "next dev",

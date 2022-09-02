@@ -21,6 +21,7 @@
   width: 250px;
   border: 0;
   background-color: #000;
+  color: white;
   border-radius: 20px 0px 0px 20px;
   padding: 0 20px;
   font-size: 16px;
@@ -35,10 +36,12 @@
   padding: 0 10px;
   border-radius: 0px 20px 20px 0px ;
   border: 0;
+  cursor: pointer;
 }
 
 .formSearch button:hover {
-  opacity: 0.5;
+  background-color: #000;
+  color: white;
 }
 
 .titleContainer {
@@ -53,24 +56,61 @@
   color: #000;
 }
 .img{
-  border: 2px solid #000;
+  transition: 900ms;
+  width: 280px;
+  height: 398px;
 }
+.image{
+  border-radius: 20px;
+}
+.img:hover{
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 900ms;
+  border-radius: 20px;
+} 
 .moviesCointainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+ 
+}
+.movie{
+ margin: 10px;
 }
 .moviesCointainer p {
   color: #000;
   font-weight: bold;
 }
-
-.moviesCointainer span {
-  color: yellow;
+.moviesCointainer .title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
-
+.moviesCointainer span {
+  padding: 10px;
+  color: yellow;
+ 
+}
+.moviesCointainer p{
+  background-color: black;
+  color: white;
+  padding: 20px 0 20px 0;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+}
 .paginationContainer {
   display: flex;
   justify-content: center;
   margin: 50px 0;
+ 
+
+}
+.title{
+  color: white;
+}
+.details h1{
+  color: white;
+  text-align: center;
 }

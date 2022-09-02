@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css';
 import Pagination from '../components/Pagination';
 import { args } from '../config/api';
 
+
 interface IPropsComponent {
   list: any[]
   page: number
@@ -14,6 +15,7 @@ interface IPropsComponent {
   searchParam: string
 }
 const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
+  
   const [data, setData] = useState<any[]>([])
 
   const router = useRouter()
@@ -29,7 +31,9 @@ const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
       return router.push(`?page=${value}`)
     }
   }
-
+function details(){
+  return router.push(`/details`)
+}
   async function handleSearchMovie(e: FormEvent<HTMLFormElement>){
     e.preventDefault()
     return router.push(`/?search=${search}&page=1`)
@@ -43,6 +47,7 @@ const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
     setResult(searchParam)
   }, [list, searchParam])
 
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -66,17 +71,20 @@ const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
 
         <div className={styles.moviesCointainer}>
           {data.map((item: any, index: number) => (
-            <div key={index}>
+            <div className={styles.movie} key={index}>
               <div className={styles.img}>
-              <Image src={`http://image.tmdb.org/t/p/original${item.poster_path}`}
+              <Image onClick={details} className={styles.image} src={`http://image.tmdb.org/t/p/original${item.poster_path}`}
                 alt="image movie"
                 width={280}
                 height={400}
                />
               </div>
+              <p className={styles.title}>
+                {item.title}
+              </p>
               <div>
                 {item.vote_average ? (
-                  <p>
+                  <p >
                     Nota: <span>{item.vote_average}</span>
                   </p>
                 ) : (
@@ -85,12 +93,12 @@ const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
                   </p>
                 )}
               </div>
+
             </div>
           ))}
-
+          
         </div>
       </div>
-
       <div className={styles.paginationContainer}>
         <Pagination
           total_pages={total_pages}
@@ -100,8 +108,8 @@ const Home =({list, page, total_pages, searchParam}:IPropsComponent)=>{
       </div>
     </div>
   )
+ 
 }
-
 export default Home
 
 export async function getServerSideProps({
@@ -140,3 +148,4 @@ export async function getServerSideProps({
 
   }
 
+  
