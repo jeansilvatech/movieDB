@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MovieDB
 
-## Getting Started
+## Aplicação desenvolvida durante o Hiring Coders #3 utilizando Next.js e TypeScript consumindo API do The Movie Database (TMDB).
 
-First, run the development server:
+## Teste o projeto abaixo:
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white"/></a>
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white"/></a>
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white"/></a>
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white" /></a>
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Safari-FFFFFF?style=for-the-badge&logo=Safari&logoColor=black"/></a>
+<a href="https://movie-db-ten-phi.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Brave-000000?style=for-the-badge&logo=Brave&logoColor=white"/></a>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Print do projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![image](https://user-images.githubusercontent.com/23384348/173903835-3cd4977f-2548-43e7-b631-2f5987aaa3e7.png)
