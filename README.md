@@ -13,3 +13,7 @@
 ## Print do projeto
 
 ![image](https://user-images.githubusercontent.com/23384348/173903835-3cd4977f-2548-43e7-b631-2f5987aaa3e7.png)
+
+## Atualização na estilização
+![image](https://user-images.githubusercontent.com/23384348/188248562-8fdce2f9-0254-49f7-85d1-32a0fa65f896.png)
+
