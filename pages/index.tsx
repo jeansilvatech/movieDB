@@ -51,7 +51,7 @@ function details(){
   return (
     <div className={styles.container}>
       <Head>
-        <title>Projeto aula NextJS MovieDB</title>
+        <title>NextJS MovieDB</title>
         <meta name="description" content="Gerado pelo create next app"/>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
@@ -65,15 +65,17 @@ function details(){
         </div>
 
         <div className={styles.titleContainer}>
-          {result ? (<h1>Resultados de busca para: {`${result}`}</h1>)
+          {result ? (<h1>Resultados de busca para: <span className="result_search">{`${result}`}</span></h1>)
           : (<h1>Filmes Populares</h1>)}
         </div>
 
         <div className={styles.moviesCointainer}>
           {data.map((item: any, index: number) => (
-            <div className={styles.movie} key={index}>
+            <div onClick={()=>{
+              console.log(item)
+            }} className={styles.movie} key={index}>
               <div className={styles.img}>
-              <Image onClick={details} className={styles.image} src={`http://image.tmdb.org/t/p/original${item.poster_path}`}
+              <Image  className={styles.image} src={`http://image.tmdb.org/t/p/original${item.poster_path}`}
                 alt="image movie"
                 width={280}
                 height={400}
@@ -82,10 +84,10 @@ function details(){
               <p className={styles.title}>
                 {item.title}
               </p>
-              <div>
+              <div >
                 {item.vote_average ? (
-                  <p >
-                    Nota: <span>{item.vote_average}</span>
+                  <p className={styles.vote_average}>
+                    Nota: <span>{item.vote_average.toFixed(1)}</span>
                   </p>
                 ) : (
                   <p>
